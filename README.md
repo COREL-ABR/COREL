@@ -6,6 +6,7 @@ The implementation is built upon [Pensieve](https://github.com/hongzimao/pensiev
 The fast changing 5G throughput is an exogenous and stochastic process independent of ABR actions, making it challenging for RL to evaluate ABR decisions, as observed QoE feedback may vary due to disparate network conditions or the quality of the learned policy. COREL copes with 5G networks by `reward shaping` and casts the ABR algorithm optimization as a `constrained optimization` task: optimizing a single objective (i.e., maximizing bitrate ) while maintaining a controlled level of performance degradation in other objectives (i.e., minimizing stall time to satisfy a constraint).
 
 Results across various commercial mmWave 5G traces show that COREL reduces the average stall time by a factor of 4.
+
 <img src="images/result.png" alt="Figure description" width="250"/>
 
 ## Prerequisites
